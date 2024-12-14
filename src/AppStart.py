@@ -30,6 +30,13 @@ def query():
                 "content": userInput
             }]
         )
+
+        output = response.choices[0].message.content.strip()
+        return jsonify({ "output": output })
+
+    except Exception as e:
+        return jsonify({ "error": str(e) }), 500
+
 @app.route("/error")
 def error():
     return render_template("error.html")
