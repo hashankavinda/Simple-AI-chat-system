@@ -37,7 +37,7 @@
    
 3. Enter a query in the provided text box, submit it, and view the model's response
 
-##Troubleshooting
+## Troubleshooting
 1. If an error occurs due to the version mismatch in openai, please run this command and install correct openai version
    ````bash
    pip install openai==0.28   
